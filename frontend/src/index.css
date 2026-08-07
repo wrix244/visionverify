@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface-950 text-surface-100 selection:bg-brand-600 selection:text-white font-sans antialiased;
+  }
+}
+
+/* Razorpay Minimal Flat Surface Styles */
+.razor-panel {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+}
+
+.razor-card {
+  background: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 0.75rem;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.razor-card:hover {
+  border-color: #334155;
+}
+
+/* Code Snippet Block */
+.code-block {
+  background: #0b1329;
+  border: 1px solid #1e293b;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0b1329;
+}
+::-webkit-scrollbar-thumb {
+  background: #1e293b;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #334155;
+}
